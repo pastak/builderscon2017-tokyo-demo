@@ -4,3 +4,5 @@ key.pem
 *.crx
 *.xpi
 *.zip
+webpack-modules/addon/background_scripts/index.js
+webpack-modules/addon/popup/index.js
