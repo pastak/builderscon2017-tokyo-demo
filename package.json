@@ -1,5 +1,6 @@
 {
   "name": "builderscon2017",
+  "author": "pastak",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
