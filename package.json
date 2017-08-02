@@ -1,0 +1,12 @@
+{
+  "name": "builderscon2017",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "chrome-browser-object-polyfill": "^0.2.2",
+    "crx": "^3.2.1",
+    "web-ext": "^2.0.0",
+    "wemf": "^1.1.3"
+  }
+}
