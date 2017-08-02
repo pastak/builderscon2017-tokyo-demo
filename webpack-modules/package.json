@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "chrome-browser-object-polyfill": "^0.2.2",
-    "left-pad": "^1.1.1"
+    "left-pad": "^1.1.1",
+    "then-chrome": "^1.0.7"
   }
 }

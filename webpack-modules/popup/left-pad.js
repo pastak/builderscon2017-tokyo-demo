@@ -5,7 +5,7 @@ const textNode = document.getElementById("text");
 const amountNode = document.getElementById("amount");
 const withNode = document.getElementById("with");
 
-document.getElementById("leftpad-form").addEventListener("submit", (e) => {
+document.getElementById("pad").addEventListener("click", (e) => {
     e.preventDefault();
 
     console.log("padding");
@@ -13,6 +13,7 @@ document.getElementById("leftpad-form").addEventListener("submit", (e) => {
 }, false);
 
 document.getElementById("pad-bg").addEventListener("click", (e) => {
+    e.preventDefault();
     var sendingMessage = browser.runtime.sendMessage({
         text: textNode.value,
         amount: amountNode.valueAsNumber,
