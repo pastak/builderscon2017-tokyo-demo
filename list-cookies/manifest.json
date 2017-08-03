@@ -1,6 +1,5 @@
 {
   "browser_action": {
-    "browser_style": true,
     "default_title": "List cookies in the active tab",
     "default_popup": "cookies.html",
     "default_icon": {
@@ -13,9 +12,13 @@
     "48": "icons/cookie.png",
     "96": "icons/cookie@2x.png"
   },
-  "homepage_url": "https://github.com/mdn/webextensions-examples/tree/master/list-cookies",
   "manifest_version": 2,
   "name": "List cookies",
   "version": "1.0",
-  "permissions": ["cookies","<all_urls>","tabs"]
+  "permissions": [
+    "cookies",
+    "<all_urls>",
+    "tabs"
+  ],
+  "author": "pastak"
 }

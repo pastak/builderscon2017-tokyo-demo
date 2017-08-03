@@ -3,8 +3,8 @@ function showCookiesForTab(tabs) {
   let tab = tabs.pop();
 
   //get all cookies in the domain
-  var gettingAllCookies = browser.cookies.getAll({url: tab.url});
-  gettingAllCookies.then((cookies) => {
+  var gettingAllCookies = (callback) => browser.cookies.getAll({url: tab.url}, callback);
+  gettingAllCookies((cookies) => {
 
     //set the header of the panel
     var activeTabUrl = document.getElementById('header-title');
@@ -33,7 +33,7 @@ function showCookiesForTab(tabs) {
 
 //get active tab to run an callback function.
 //it sends to our callback an array of tab objects
-function getActiveTab() {
-  return browser.tabs.query({currentWindow: true, active: true});
+function getActiveTab(callback) {
+  return browser.tabs.query({currentWindow: true, active: true}, callback);
 }
-getActiveTab().then(showCookiesForTab);
+getActiveTab(showCookiesForTab);
