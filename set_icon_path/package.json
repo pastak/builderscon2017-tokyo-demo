@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "chrome-browser-object-polyfill": "^0.2.2",
+    "webpack": "^2.7.0"
+  }
+}
